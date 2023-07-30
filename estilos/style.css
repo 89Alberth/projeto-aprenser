@@ -1,13 +1,47 @@
 :root{
     --primary-color: #FED001;
 }
-
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 html{
     font: 400 62.5% 'Inter', sans-serif;
 }
 
-p{
+p,
+a{
     font-size: 1.6rem;
+}
+
+h2{
+    font-size: 4rem;
+}
+
+h3{
+    font-size: 2.8rem;
+}
+
+.section_title{
+    padding: 5rem 0;
+    text-align: center;
+}
+
+.upper{
+    text-transform: uppercase;
+}
+
+.btn{
+    font-size: 1.8rem;
+    text-decoration: none;
+    color:#2A2A2A;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    padding: 1.2rem 3rem;
+    display: inline-block;
 }
 
 .wrapper-dark{
@@ -20,4 +54,165 @@ p{
 
 .wrapper-dark2{
     background-color: #003464;
+    color: #fafafa;
+}
+
+.container{
+    max-width: 1276px;
+    margin: auto;
+}
+
+
+/* Header */
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.8rem ;
+}
+
+.header__menu ul{
+    display: flex;
+    list-style-type: none;
+    gap: 1rem;
+
+}
+
+.header__menu a{
+    text-decoration: none;
+    color: var(--primary-color);
+    padding: 1rem 1.5rem;
+    border: solid 0.1rem;
+}
+
+.header__menu a:hover{
+    cursor: pointer;
+    background-color: #202020;
+}
+
+
+
+
+/* Hero Banner*/
+
+.wrapper-heroBanner{
+    background-image: linear-gradient(white, rgb(255, 255, 78));
+}
+
+.heroBanner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20rem;
+}
+
+.hero__title{
+    font-size: 4.6rem;
+    margin-bottom: 4rem;
+    line-height: 7rem;
+}
+
+
+
+/*Cursos*/
+
+.course{
+    text-align: center;
+}
+
+.course .btn{
+    margin: 7rem 0;
+}
+
+.cards{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.cards a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.course__cards{
+    flex: 1;
+}
+
+.course__cards img{
+    display: block;
+    width: 100%;
+}
+
+.cards_content{
+    padding: 1rem 1.25rem;
+    text-align: left;
+    border:1px solid #ccc;
+    border-radius: 0 0 8px 8px;
+    border-top: transparent;
+}
+
+
+.course__cards h3{
+    padding: 2rem 0;
+    font-size: 2.4rem;
+}
+
+.course__cards p{
+    font-size: 1.8rem;
+    line-height: 1.5;
+    padding: 2rem 0;
+}
+
+
+/*Nossa escola*/
+
+.school{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5rem;
+    gap: 10rem;
+}
+
+.school__content{
+    display: flex;
+    flex-direction: column;
+}
+
+.school__content h2{
+    padding-bottom: 7rem;
+    margin-top: 2rem;
+}
+
+.school__content p{
+    line-height: 1.8;
+    padding: 0 7rem 0 0;
+}
+
+
+
+
+
+.contact address{
+    text-align: right;
+    font-style: normal;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    font-family: 'Inter', sans-serif;
+    padding: 2rem 0;
+}
+
+
+
+
+footer{
+    text-align: center;
+    color: white;
+    padding: 3rem;
+    background-color: #2A2A2A;
+}
+
+footer p{ 
+    font-size: 1.2rem;
 }
